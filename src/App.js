@@ -3,6 +3,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import './App.css';
 import Home from './Home';
 import NavBar from "./component/common/NavBar.js";
+import AddStudent from "./component/student/AddStudent.js";
 import StudentsView from './component/student/StudentsView';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
@@ -21,6 +22,10 @@ function App() {
           exact 
           path="/view-students" 
           element={<StudentsView />}></Route>
+          <Route 
+          exact 
+          path="/add-students" 
+          element={<AddStudent />}></Route>
           <Route 
           exact 
           path="/" 
